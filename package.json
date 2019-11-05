@@ -1,0 +1,48 @@
+{
+  "name": "automatic-combine-redux",
+  "version": "0.0.1",
+  "description": "automatic combine reducer or saga",
+  "main": "lib/autoCombineRedux.cjs.js",
+  "module": "es/autoCombineRedux.esm.js",
+  "browser": "dist/autoCombineRedux.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "pretest": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zhangwei900808/automatic-combine-redux.git"
+  },
+  "keywords": [
+    "automatic",
+    "cobine",
+    "redux",
+    "reducer",
+    "saga"
+  ],
+  "author": "zhangwei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhangwei900808/automatic-combine-redux/issues"
+  },
+  "homepage": "https://github.com/zhangwei900808/automatic-combine-redux#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "rollup": "^1.26.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-uglify": "^6.0.3",
+    "rollup-plugin-url": "^3.0.0"
+  },
+  "dependencies": {}
+}
