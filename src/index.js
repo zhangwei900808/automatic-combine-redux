@@ -1,3 +1,4 @@
 import autoCombineSaga from "./autoCombineSaga";
+import autoCombineReducer from "./autoCombineReducer";
 
-export default { autoCombineSaga };
+export default { autoCombineReducer, autoCombineSaga };
