@@ -3,6 +3,7 @@ import commonjs from "rollup-plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
 import babel from "rollup-plugin-babel";
 import json from "rollup-plugin-json";
+import requireContext from "rollup-plugin-require-context";
 
 // browser-friendly UMD build
 import pkg from "./package.json";
@@ -15,6 +16,7 @@ export default [
       format: "umd"
     },
     plugins: [
+      requireContext(),
       resolve(), // so Rollup can find `ms`
       babel({
         exclude: "node_modules/**"
@@ -35,6 +37,7 @@ export default [
     // external: ['ms'],
     output: [{ file: pkg.main, format: "cjs" }, { file: pkg.module, format: "es" }],
     plugins: [
+      requireContext(),
       resolve(),
       babel({
         exclude: "node_modules/**"
