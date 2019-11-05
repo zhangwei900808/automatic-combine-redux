@@ -2,11 +2,11 @@
 const matchFilefromPath = (path, searchChild) => {
   try {
     let paths = require.context(path, searchChild, /\.reducer\.js$/);
+    return paths;
   } catch (e) {
     console.log("e = ", e);
+    return null;
   }
-
-  return paths;
 };
 
 // 获取完组合成reducer对象
