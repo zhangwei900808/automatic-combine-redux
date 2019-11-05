@@ -1,6 +1,6 @@
 {
   "name": "automatic-combine-redux",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "automatic combine reducer or saga",
   "main": "lib/autoCombineRedux.cjs.js",
   "module": "es/autoCombineRedux.esm.js",
