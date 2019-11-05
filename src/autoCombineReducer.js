@@ -2,6 +2,8 @@
 const matchFilefromPath = (path, searchChild) => {
   try {
     let paths = require.context(path, searchChild, /\.reducer\.js$/);
+    console.log("paths=", paths);
+
     return paths;
   } catch (e) {
     console.log("e = ", e);
