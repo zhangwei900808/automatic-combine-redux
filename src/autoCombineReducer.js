@@ -1,9 +1,14 @@
 // 获取model下所有以.reducer.js结尾的文件
-const matchFilefromPath = (path, searchChild) => {
+const matchFilefromPath = (directory = ".", searchChild = true) => {
   try {
-    let paths = require.context(path, searchChild, /\.reducer\.js$/);
-    console.log("paths=", paths);
-
+    let paths = require.context(".", searchChild, /\.reducer\.js$/);
+    if (directory == "../") {
+      paths = require.context("../", searchChild, /\.reducer\.js$/);
+    }
+    if (directory == "../../") {
+      paths = require.context("../../", searchChild, /\.reducer\.js$/);
+    }
+    console.log("CONTEXT=", paths);
     return paths;
   } catch (e) {
     console.log("e = ", e);
