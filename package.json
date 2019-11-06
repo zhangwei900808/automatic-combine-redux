@@ -2,9 +2,9 @@
   "name": "automatic-combine-redux",
   "version": "0.0.9",
   "description": "automatic combine reducer or saga",
-  "main": "lib/autoCombineRedux.cjs.js",
-  "module": "es/autoCombineRedux.esm.js",
-  "browser": "dist/autoCombineRedux.umd.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "browser": "dist/automatic-combine-redux.min.js",
   "scripts": {
     "build:umd": "cross-env BABEL_ENV=umd webpack --mode production",
     "build:commonjs": "rimraf lib && cross-env BABEL_ENV=commonjs babel src -d lib --source-maps",
